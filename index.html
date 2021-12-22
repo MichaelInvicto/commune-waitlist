@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commune Starter Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="container">
+      <section class="navbar">
+        <nav>
+          <img src="Assets/Logo.svg">
+          <img src="Assets/Hamburger Menu.svg" id="menuBtn" class="menu-btn">
+          <ul id="navLinks">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Communities</a></li>
+            <button type="button">Join Waitlist</button>
+          </ul>
+        </nav>
+      </section>
+      <section class="hero-section">
+        <div class="hero-text">
+          <div class="colored-section">
+            <p>We are now allowing early-access for users. <a href="#">Learn more.</a></p>
+          </div>
+          <div class="text-section">
+            <h1>Build a highly engaged community with no effort.</h1>
+            <p>
+              Commune offers the tools you need to build a higly engaged community with little to no effort.
+              Simply setup your Commune workspace, and manage everything from members to content from one
+              central dashboard.
+            </p>
+          </div>
+          <div class="email-section">
+            <input type="email" placeholder="Enter your e-mail address">
+            <button type="button">Join Waitlist</button>
+          </div>
+        </div>
+        <div class="hero-image"></div>
+      </section>
+      <section class="logo-section">
+        <p>Used by these companies:</p>
+        <img src="Assets/Atlassian Icon.svg">
+        <img src="Assets/Behance Icon.svg">
+        <img src="Assets/Bing Icon.svg">
+        <img src="Assets/Bitbucket Icon.svg">
+        <img src="Assets/Dropbox Icon.svg">
+        <img src="Assets/Twitch Icon.svg">
+        <img src="Assets/Twitter Icon.svg">
+      </section>
+    </div>
+    <script type="text/javascript">
+      var menuBtn = document.getElementById("menuBtn");
+      var navLinks = document.getElementById("navLinks");
+
+      navLinks.style.right = "-300px";
+
+      menuBtn.onclick = function(){
+        if (navLinks.style.right == "-300px") {
+          navLinks.style.right = "0";
+        }
+        else {
+          navLinks.style.right = "-300px";
+        }
+      }
+    </script>
+  </body>
+</html>
