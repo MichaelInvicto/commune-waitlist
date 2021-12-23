@@ -56,6 +56,15 @@ button {
   border-radius: 4px;
   font-size: 1.1rem;
   font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+}
+button:hover {
+  border-radius: 50px;
+  background-color: transparent;
+  color: rgb(55, 40, 101);
+  border: 1px solid rgb(55, 40, 101);
+  transition: .5s;
 }
 .hero-section {
   display: flex;
